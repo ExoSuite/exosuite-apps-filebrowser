@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  exosuite-filebrowser:
+    restart: always
+    build:
+      context: .
+    networks:
+      filebrowser:
+        ipv4_address: 172.21.0.2
+    volumes:
+      - "/home/administrator/exosuite-filebrowser:/srv"
+
+networks:
+  filebrowser:
+    ipam:
+      config:
+        - subnet: 172.21.0.0/30
