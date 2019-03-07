@@ -7,7 +7,7 @@ services:
       context: .
     networks:
       filebrowser:
-        ipv4_address: 172.21.0.2
+        ipv4_address: 172.121.0.2
     volumes:
       - "/home/administrator/exosuite-application-repository:/srv"
 
@@ -15,4 +15,4 @@ networks:
   filebrowser:
     ipam:
       config:
-        - subnet: 172.21.0.0/30
+        - subnet: 172.121.0.0/30
