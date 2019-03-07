@@ -9,7 +9,7 @@ services:
       filebrowser:
         ipv4_address: 172.21.0.2
     volumes:
-      - "/home/administrator/exosuite-filebrowser:/srv"
+      - "/home/administrator/exosuite-application-repository:/srv"
 
 networks:
   filebrowser:
